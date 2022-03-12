@@ -2,6 +2,7 @@ migrations/
 db.sqlite3
 node_modules/
 .vscode
+frontend angular/.angular/cache/
 
 # Compiled output
 /dist
@@ -31,7 +32,7 @@ yarn-error.log
 .history/*
 
 # Miscellaneous
-/.angular/cache
+.angular/cache
 .sass-cache/
 /connect.lock
 /coverage

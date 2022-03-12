@@ -1,1 +1,8 @@
-<p>header works!</p>
+<header class="header-menu">
+    <h1 class="title" [routerLink]="['/']" routerLinkActive="router-link-active"  >Blog Me Up</h1>
+
+    <nav class="navbar">
+        <a routerLink="/" routerLinkActive="active-link" >Home</a>
+        <a routerLink="new/" routerLinkActive="active-link" >Create</a>
+    </nav>
+</header>
