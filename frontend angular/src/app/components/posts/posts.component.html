@@ -1,2 +1,12 @@
-<p>posts works!</p>
-<button (click)="printData()" >Click</button>
+<app-post-loading *ngIf="this.isLoading" ></app-post-loading>
+
+<div class="cards-container">
+    <mat-card class="card" *ngFor="let item of data" >
+        <mat-card-title>{{ item.title }}</mat-card-title>
+        <img  mat-card-image src="https://source.unsplash.com/random" title="card-image" >
+        <mat-card-content>
+            <p>{{ item.content }}</p>
+            <p>Status: {{ item.status }}</p>
+        </mat-card-content>
+    </mat-card>
+</div>

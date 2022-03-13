@@ -12,6 +12,15 @@ import { PostsComponent } from './components/posts/posts.component';
 import { NewPostComponent } from './components/new-post/new-post.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 
+import { 
+  MatCardModule,
+  MatCard,
+  MatCardImage,
+  MatCardTitle,
+  MatCardContent
+ } from "@angular/material/card";
+
+
 const appRoutes: Routes = [
   { path: '', component: PostsComponent },
   { path: 'new', component: NewPostComponent },
@@ -27,13 +36,14 @@ const appRoutes: Routes = [
     PostLoadingComponent,
     PostsComponent,
     NewPostComponent,
-    NotFoundComponent
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

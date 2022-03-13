@@ -11,10 +11,13 @@ export class PostsComponent implements OnInit {
 
   constructor(private blogService: BlogService) { }
   data: PostModel[];
+  isLoading: boolean;
 
   ngOnInit(): void {
+    this.isLoading = true;
     this.blogService.getData()
-      .subscribe(data => this.data = data)
+    .subscribe(data => this.data = data);
+    this.isLoading = false;
   }
 
   printData() {

@@ -1,0 +1,17 @@
+.cards-container {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+
+.card {
+    width: 25vw;
+
+    img {
+        width: 25vw;
+        height: 300px;
+    }
+}

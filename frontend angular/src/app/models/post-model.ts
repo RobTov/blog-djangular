@@ -3,5 +3,6 @@ export interface PostModel {
     title: string,
     author: number,
     excerpt: string,
-    content: string
+    content: string,
+    status: string,
 }
