@@ -1,6 +1,7 @@
 migrations/
 db.sqlite3
 node_modules/
+__pycache__/
 .vscode
 frontend angular/.angular/cache/
 
